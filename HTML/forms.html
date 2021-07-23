@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html forms </title>
+</head>
+
+<body>
+
+    <h3>html forms</h3>
+
+    <form action="backend.php">
+        <div>
+            <!-- for selecting area by selecting lable -->
+            <label for="name"> Name</label>
+            <input type="text" name="myname" id="name">
+            <!-- Name : <input type="text" name="myName"> -->
+        </div>
+        <br>
+        <div>
+            PRN : <input type="text" name="myPRN">
+        </div>
+        <br>
+        <div>
+            date : <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            are you elidgible <input type="checkbox" name="Myeldg">
+        </div>
+        <br>
+        <div>
+            gender : male <input type="radio" name="MyGender"> Female <input type="radio" name="MyGender">other <input
+                type="radio" name="MyGender">
+        </div>
+        <br>
+        <div>
+            semnister : <input type="number" name="mySemz">
+        </div>
+        <br>
+        <div>
+            email: <input type="email" name="email">
+        </div>
+        <br>
+        <div>
+            your feedback <br> <textarea name="mytext" cols="60" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="type">type of exam</label>
+            <select name="type" id="type">
+                <option value="regular">regular</option>
+                <option value="backlog">backlog</option>
+            </select>
+        </div>
+        <br>
+
+
+
+        <div>
+            <input type="submit" value="submit">
+            <input type="reset" value="Reset">
+        </div>
+        <br>
+
+
+
+
+    </form>
+
+</body>
+
+</html>
