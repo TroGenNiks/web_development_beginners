@@ -1,0 +1,22 @@
+
+h1{
+    color: crimson;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    line-height: 200px;
+    line-break: strict;
+}
+li{
+
+    font-family: 'Style Script', cursive;
+    font-style:italic;
+}
+#cursiv{
+    font-family: cursive;
+
+}
+p{
+    font-variant:small-caps;
+    font-weight: 700;
+    
+}
