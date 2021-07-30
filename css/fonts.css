@@ -4,7 +4,7 @@ h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
     line-height: 200px;
-    line-break: strict;
+   
 }
 li{
 
@@ -13,6 +13,7 @@ li{
 }
 #cursiv{
     font-family: cursive;
+    
 
 }
 p{
