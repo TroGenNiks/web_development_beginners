@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling links and bottons in css</title>
+</head>
+<style>
+    .container{
+
+        border: 3px solid rgb(100, 173, 255);
+        background-color: rgb(168, 238, 255);
+        margin: auto;
+        padding: 20PX 20PX ;
+        width: 900px;
+    }
+    h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: auto;
+        width: 300px;
+    }
+    .btn{
+        border:2px solid rgb(64, 6, 112);
+        background-color: rgb(224, 165, 37);
+        border-radius: 5px;
+        
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .btn:hover{
+        color: red;
+        background-color: white;
+    }
+    .btn:active{
+        background-color: brown;
+    }
+    a:visited{
+        background-color: gray;
+    }
+    h3{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: auto;
+        width: 350px;
+    }
+
+</style>
+<body>
+    <div class="container" id="cont1">
+        <h1>CSS btn links </h1>
+        <h3>psudo selctors and designing</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta facilis, molestiae commodi nesciunt unde reprehenderit officiis numquam molestias iste delectus repellendus laborum neque excepturi quisquam non. Aperiam maiores facilis expedita?</p>
+        <a href="https://github.com/TroGenNiks/web_development_beginners" target="_blank" class="btn">mygithub</a>
+        
+        <button class="btn">close</button>
+    </div>
+
+    
+</body>
+</html>
