@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trasitions in css</title>
+</head>
+<style>
+
+    #box{
+            display: flex;
+            height: 200px;
+            width: 200px;
+            align-items: center;
+            background-color: gray;
+            justify-content: center;
+            /* transition-property: background-color;
+            transition-duration: 2s;
+            transition-delay: 2s;
+            transition-timing-function: ease-in-out; */
+
+           /* transition short hand */
+        /* transition: background-color 1s ease-in-out 2s ; */
+        transition: all 1s ease-in-out  ;
+
+    }
+    #box:hover{
+        background-color: red;
+        height: 300px;
+        width: 300px;
+        border-radius: 200px;
+       
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+
+    }
+
+</style>
+<body>
+
+    <h2>This is CSS trasitions</h2>
+    <div class="container">
+        <div id="box">
+            This is box
+        </div>
+    </div>
+
+    
+</body>
+</html>
