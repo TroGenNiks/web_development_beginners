@@ -1,86 +1,148 @@
 *{
-    margin:0px;
-    padding: 0px;
-}
-*, *:before, *:after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-
-/* sticky */
-
-#sticky{
-    font-size: 12px;
-    height: 54px;
-    background-color: #262626;
-    z-index: 100;
-    line-height: 54px;
-    margin-bottom: 1px;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-#sticky img{
-    top:0px;
-    left:0px;
-    height: 70px;
-    
-}
-#sticky a{
-    border:2px solid rgb(0, 0, 0);
-    color: white; 
-    background: black;
-    border-radius: 21px;
-    text-decoration: none;
-    float: right;
-    position:relative;
-    top:0px;
- 
-    padding: 5px 10px;
-
-
-}
-#sticky a:hover{
-    color: black;
-    background-color: rgb(236, 236, 236);
-
+html{
+    scroll-behavior: smooth;
 }
 
-/* navbar */
-#navbar ::before{
-
-content: "";
-    background-color:#2b2b2b;
-    position: absolute;
-    top:54px;
-    left:0px;
-    height: 54px;
-    width:100%;
-    z-index: -1;
-    opacity: 0.3;
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
 }
+
+/* Navigation Bar */
 #navbar{
     display: flex;
-    position: relative;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
     z-index: -1;
-    justify-content: center;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+#logo a{
+    margin: 10px 34px;
+    border: 2px solid gray;
+   
+}
+
+#logo a img{
+    height: 59px;
+    margin: 3px 6px;
+    transition: all 1s ease-in-out;
+}
+#logo a :hover{
+    background-color: gray;
+    border-radius: 3px 3px  25px 25px;
 
 }
+
+
+/* Navigation Bar: List Styling */
 
 #navbar ul{
-    align-items: center;
     display: flex;
+    /* font-family: 'Bebas Neue', cursive; */
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+#navbar ul li{ 
     list-style: none;
+    font-size: 1.3rem;
 }
-#navbar ul li {
-    
-}
+
 #navbar ul li a{
-   
+    color: white;
     display: block;
-    margin: 3px 8px;
-    padding: 3px 10px;
+    padding: 3px 22px;
+    border-radius: 20px;
     text-decoration: none;
 }
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#social_media{
+    display: flex;
+    position: absolute;
+    right: 20px;
+   
+
+}
+#social_media a{
+    margin: 2px;
+    padding: 3px;
+}
+#insta a img {
+    
+ 
+    height: 50px;   
+}
+#fb{
+    display: block;
+    position: relative;
+    top: 5px;
+}
+#fb a img {
+    /* position: absolute; */
+    top: 20px;
+    height: 40px;
+}
+#insta a  :hover{
+    background-color: white;
+    border-radius: 30px;
+}
+#fb a  :hover{
+    height: 45px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+
+
+
+
+/* Home Section */
 #home{
-    height: 15200px;
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../resource/BG.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
 }
