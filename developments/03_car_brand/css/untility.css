@@ -1,0 +1,85 @@
+.flex{
+    display: flex;
+
+}
+.center{
+    align-items: center;
+}
+.justify-bet{
+    justify-content: space-between;
+}
+.justify-cen{
+    justify-content: center;
+}
+.btn{
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 100;
+    cursor:pointer;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary{
+    background: rgba(80, 80, 80, 0.452);
+    color: rgb(201, 197, 197);
+    text-transform: uppercase;
+}
+.btn-secondary{
+    text-transform: uppercase;
+    background: transparent;
+    border-color: gray;
+    color: gray;
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: gray;
+    color: gray;
+}
+.btn-secondary:hover{
+    background: rgb(177, 174, 174);
+    color: rgb(15, 15, 15);
+    text-transform: uppercase;
+}
+
+.primary{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+}
+.secondary{
+    font-family: 'Poppins', sans-serif;
+    color: #dedede;
+    font-size: 100px;
+    font-weight: 300;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(141, 133, 133);
+    
+}
+.plain{
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #dedede;
+    font-weight: 200;
+    text-transform: uppercase;
+    
+}
+.icon-pre{
+    
+    cursor:pointer;
+    padding: 1rem 0.8rem;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+
+
+
+

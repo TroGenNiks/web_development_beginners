@@ -1,0 +1,349 @@
+--root{
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header{
+    background-color: rgb(0, 0, 0);
+    
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15PX;
+    margin: 0 auto;
+}
+.branding img {
+    height: 4rem;
+    
+    margin: 20px 10px;
+}
+header nav .left a{
+    font-family: 'Nanum Gothic', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: rgb(201, 197, 197);
+    text-decoration: none;
+    margin-left: 3rem;
+}
+header nav .left a:hover{
+    color:#7e7777;
+}
+header nav .right{
+
+    margin-right: 2rem;
+}
+
+
+
+/* mainboxcss */
+
+.mainbox{
+    display: flex;
+    flex-direction: row;
+    padding:3px 100px;
+    height: 550px;
+   justify-content: flex-start;
+    align-items: center; 
+    clip-path: polygon(0 0 , 100% 0 , 100% 100% ,70% 80% , 0 100% );
+}
+.mainbox ::before{
+    content: "";
+    position: absolute;
+    background: url('../img/bg1.jpg') no-repeat right center/cover ;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+}
+.mainbox .title{
+    width: 40%;
+
+}
+.mainbox .title button{
+    display: block;
+}
+.mainbox .title h2{
+    /* line-height: 3.7rem; */
+    line-height: 80px;
+}
+.mainbox .title h2 span{
+    margin: 2rem 0;
+    padding: 2rem;
+}
+.mainbox .title p{
+    
+    font-family: 'Poppins', sans-serif;
+    margin: 2rem 0;
+    word-spacing: 5px;
+    font-weight: 100;
+   
+}
+
+
+/* sewconboxcss */
+
+section{
+    padding: -1rem 0;
+}
+section .container{
+    width: 800px;
+}
+section .container img{
+    height: 10rem;
+    transition: transform 1s;
+    object-fit: contain;
+}
+section .container img:hover{
+    transform: scale(1.2)
+}
+section .container .message{
+    padding: 2rem 3rem;
+    line-height: 30px;
+
+}
+section .container .message img{
+    height: 6rem;
+    margin-left: 20rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    padding: 2px 3px;
+    border: 1px solid transparent;
+}
+section .container .message h2{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+section .container .message h2 span{
+    color: gray;
+}
+section .container .message h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+
+}
+
+
+/* section2 css */
+
+#heading{
+    
+    font-family: 'Nanum Gothic', sans-serif;
+    color: rgb(68, 67, 67);
+    font-size: 50px;
+    font-weight: 100;
+  text-align: center;
+
+}
+#discription{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 2rem 0;
+    word-spacing: 5px;
+    font-weight: bold;
+    color: rgb(68, 67, 67);
+
+    
+}
+#marge{
+  
+    padding: 100px 10px;
+}
+
+
+
+/* cardcss */
+
+.container1{
+    position: relative;
+    width: 300px;
+    height: 420px;
+    box-shadow: 0 10px 15px rgba(181, 181, 181, .7);
+    background: #f0f0f0;
+}
+.productimg{
+    width: 300px;
+    height: 230px;
+    background: url(../img/car1.jpg)no-repeat right center/cover  ;
+}
+.productimg1{
+    width: 300px;
+    height: 230px;
+    background: url(../img/car7.jpg)no-repeat right center/cover  ;
+}
+.productimg2{
+    width: 300px;
+    height: 230px;
+    background: url(../img/car3.jpg)no-repeat right center/cover  ;
+}
+.productimg3{
+    width: 300px;
+    height: 230px;
+    background: url(../img/car4.jpg)no-repeat right center/cover  ;
+}
+.productimg4{
+    width: 300px;
+    height: 230px;
+    background: url(../img/car5.jpg)no-repeat right center/cover  ;
+}
+.productimg5{
+    width: 300px;
+    height: 230px;
+    background: url(../img/car6.jpg)no-repeat right center/cover  ;
+}
+.product-detail{
+    width: 300px;
+    height: 190px;
+    background: #21222d;
+    border-radius: 0 40% 0 0;
+    padding: .8rem;
+    columns: #fff;
+}
+.product-detail span{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+}
+.product-detail p {
+    font-size: .8rem;
+    color:#5f5f6b;
+}
+.buttons{
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+/* .btn1{
+    position: relative;
+    border: none;
+    outline: none;
+    background: #35353f;
+    columns: #fff;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+
+} */
+.cart{
+    width: 160px;
+}
+/* .btn1::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    border: 1px solid #35353f;
+    height: 45px;
+    transition: 0.3s;
+
+} */
+/* .cart::before{
+    width: 165px;
+    border-radius: 50%;
+} */
+/* .btn1:hover::before{
+    border-color: #fff;
+} */
+
+
+/* gridcss */
+
+section.services{
+    background: #000;
+    clip-path: polygon(0 10% , 70% 0 , 100% 10% ,100% 100% , 0 100% );
+    
+    
+}
+section.services .container2{
+    max-width: 1100px;
+    padding: 0 15PX;
+    margin: 0 auto;
+    background: #000;
+    
+}
+section.services .cardwrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    
+}
+
+
+
+/* footercss */
+
+section.footer .container3 .socialmedia{
+
+    height:10rem; 
+    display: flex;
+    flex-direction: column;
+    margin-left: 60rem;
+    
+}
+section.footer .container3 .socialmedia h3{
+    color: rgb(68, 67, 67);
+    font-weight: bold;
+    font-size: 30PX;
+    margin-bottom: 2.5rem;
+    margin-top: 3rem;
+    
+}
+
+#socialicon a {
+    margin: 2px 10px ;
+    margin-bottom: 6rem;
+
+}
+.icon-pre img{
+    background: rgba(172, 170, 170, 0.514);
+    border-radius: 50%;
+    padding: 5px;
+}
+.icon-pre img:hover{
+    transform: scale(1.2)
+    
+}
+section.footer .container3 .foot{
+    width: 1100px;
+    margin: 2rem auto;
+
+}
+section.footer .container3 .foot .footcard{
+    display: flex;
+    flex-direction: column;
+
+} 
+section.footer .container3 .foot .footcard h3{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(124, 122, 122);
+    font-size: 30px;
+    font-weight: bold;
+
+}
+section.footer .container3 .foot .footcard a{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(65, 63, 63);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2rem;
+    
+}
+section.footer .container3 .foot .footcard a:hover{
+    color: black;
+    transform: scale(1.2)
+
+}
